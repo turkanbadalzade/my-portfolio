@@ -1,5 +1,11 @@
+/* Dancing script for font family */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 @import "tailwindcss";
 
+
+ @source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+ @custom-variant dark (&:is(.dark *));
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -10,6 +16,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-primary: #FF33CC; 
+  --font-dancing: 'Dancing Script', cursive;
 }
 
 @media (prefers-color-scheme: dark) {
